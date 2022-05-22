@@ -16,7 +16,7 @@ kButton = QPushButton('камень')
 computer = ['камень', 'ножницы', 'бумага']
 computer2 = random.choice(computer)
 
-
+player = bButton or plaer = nButton or plaer = kButton
 
 
 lbl = QLabel('Результат')
@@ -32,22 +32,21 @@ lbl.hide
 
 
 
-
-def resualt(plaer):
+def resualt(player):
     
-    if plaer == computer2:
+    if player == computer2:
         lbl.setText('Ничья')
     elif plaer == 'камень':
         if computer2 == 'ножницы':
             lbl.setText('вы победили')
         else:
            lbl.setText('вы проиграли')
-    elif paler == 'бумага':
+    elif player == 'бумага':
         if computer2 == 'камень':
             lbl.setText('вы победили')
         else:
             lbl.setText('вы проиграли')
-    elif plaer == 'ножницы':
+    elif player == 'ножницы':
         if computer_action == 'бумага':
             lbl.setText('вы победили')
         else:
